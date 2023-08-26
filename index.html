@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/login.css">
+   <script src="./scripts/app.js" type="module"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="head">
+            <img src="Screenshot_2023-08-04_225020-transformed.png" alt="not found" srcset="">
+            <h1>ATTENDENCE-SYSTEM</h1>
+        </img>
+    </div>
+                <div class="page">
+                    <h2>Sign in</h2>
+                    
+                    <input type="text" id="loginUsername" class="text" placeholder="UserName" pattern="[A-Za-z ]+" required>
+            
+                   
+                        <input type="text" name="" id="logincontact" class="contact"  placeholder="Contact-No." pattern="[0-9]{10}" required>
+            
+                   
+                        <input type="password" id="loginPassword"  class="password" placeholder="Password" pattern="[A-Za-z ]+[0-9]+" required>
+
+                    <select id="typeSelect" class="option" >
+                    <option value="" disabled selected>Select-Type</option>
+                    <option value="Student">Student</option>
+                    <option value="Faculty" >Faculty</option>
+                    </select>
+
+                  <input type="submit" value="Login" id="loginbutton" class="button">
+                 
+                <section class="signup">
+                    <label>Need an Account?
+                    <a href="./signup.html">Sign Up</a></label>
+                </section>
+                
+                    <p id="loginMessage" class="login"></p>
+               
+                </div>
+                <footer class="footer">
+                    &copy; copyright 2023| SKIT JAIPUR
+                 </footer>
+    </div>
+</body>
+</html>

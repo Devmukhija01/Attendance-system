@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    .hidden {
+  display: none;
+}
+
+.clickable-image {
+  cursor: pointer;
+}
+
+</style>
+<body>
+  <img src="profile.png" id="image" class="clickable-image">
+  <div id="hidden-div" class="hidden">
+    <!-- Content of the hidden div goes here -->
+    <h1>Dev Mukhija</h1>
+  </div>
+  <script>
+   const image = document.getElementById('image');
+
+image.addEventListener('click', () => {
+  const newDiv = document.createElement('div'); // Create a new <div> element
+    newDiv.addEventListener('click',()=>{
+        const hidden=document.getElementById('hidden-div');
+        hidden.style.display='block';
+    })
+    // newDiv.style.display='block';
+//   newDiv.textContent = 'This is the new div created!'; // Set its content
+//   document.body.appendChild(newDiv); // Add the new <div> to the body of the document
+});
+
+  </script>
+</body>
+</html>

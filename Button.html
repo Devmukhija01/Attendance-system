@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Button.css">
+    <script src="./scripts/button.js"></script>
+</head>
+
+<body>
+    <div id="maining">
+        <div class="heading">
+            <img src="Screenshot_2023-08-04_225020-transformed.png" alt="not found" srcset="" class="logo">
+            <!-- <h1> ATTENDENCE-SYSTEM</h1> -->
+            <img src="profile.png" alt="not found" class="profile" id="profile">
+                </div>
+                    
+                <div class="overlay" id="overlay">
+                    <div class="popup">
+                      <img src="x-mark.png" alt="not found" srcset="" id="crossicon" class="crossicon">
+                    <label for="">Name:</label><p id="loginUsername" class="loginUsername"></p>
+                   <label for="">Contact-No:</label><p id="loginContact" class="loginContact"></p>
+                      <input type="submit" value="Log-Out" id="logout">
+                    </div>
+            </div>
+
+    <div class="selection">
+      <select id="selection" onchange="Gotonext()">
+        <option value="" disabled selected>Select--Batch</option>
+        <option value="" >A</option>
+        <option value="" >B</option>
+        <option value="" >C</option>
+        <option value="" >D</option>
+        <option value="" >E</option>
+        <option value="" >F</option>
+      </select>
+    </div>
+
+    <div class="Container">
+
+        <input type="submit" value="View"  id="View" class="View" onclick="button()" disabled>
+        <input type="submit" value="Mark" id="Mark" class="Mark" onclick="button1()" disabled>
+    </div>
+</div>
+</body>
+</html>
